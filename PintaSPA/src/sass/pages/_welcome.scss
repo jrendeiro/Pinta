@@ -1,0 +1,52 @@
+app-welcome {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    // background-color: $color-aqua;
+    height: 80vh;
+    width: 100%;
+    min-width: 80rem;
+    // background-image: url(../assets/ourense.jpg);
+    // background-image: linear-gradient(to right top, 
+    // rgba($color-turqu, 0.9), 
+    // rgba($color-aqua, 0.4)),
+    // url(../assets/ourense.jpg);
+    background-image: linear-gradient(to right top, 
+    rgba($color-turqu, 0.6), 
+    rgba($color-turqu, 0.1)),
+    url(../assets/ourense.jpg);
+    background-size: cover;
+    // background-position: center -16rem;
+    background-position: center;
+    // padding: 0 2rem;
+    margin: 0 auto;
+    box-shadow: 0rem 0rem 1rem #011627;
+}
+
+.product {
+    &__desc {
+        color: $color-red;
+    }
+}
+
+.icon-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem;
+    align-content: flex-start;
+    
+    &__icons {
+        font-size: 10vh;
+        padding: 2vh;
+        width: min-content;
+    }
+}
+

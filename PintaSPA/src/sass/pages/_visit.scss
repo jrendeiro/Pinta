@@ -1,0 +1,59 @@
+.visit {
+    display: flex;
+    flex-direction: column;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        font-size: $font-size-medium;
+        color: $color-red; 
+    }
+}
+
+// fa-icon {
+//     & > * {
+//         color: $color-red;
+        
+//         & > * {
+//             color: $color-red;
+//         }
+//     }
+// }
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: $font-size-medium;
+    color: $color-red; 
+
+    & * { // this is a descendant selector, while child selector would be: & > * (for difference between two, think of child vs. descendant in english)
+        color: $color-red;
+    }
+
+    &__quote {
+        display: flex;
+    }
+
+    &__name {
+        align-self: center;
+    }
+
+    &-contain {
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+}
+
+fa-icon {
+    font-size: 7rem;
+    padding-top: 3.5rem;
+    opacity: 85%;
+
+    & * {
+    color: $color-red;
+    // font-size: 5rem;
+}
+}

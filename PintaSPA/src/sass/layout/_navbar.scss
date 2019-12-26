@@ -1,0 +1,38 @@
+app-top-bar {
+    width: 100%;
+    height: 68px;
+    background-color: $color-turqu;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    & h1 {
+        color: white;
+        margin: 0;
+    }
+}
+
+.page-title {
+    font-weight: 400;
+    font-size: 12rem;
+    letter-spacing: 1rem;
+    color: $color-red;
+    -webkit-text-stroke-width: .1rem;
+    -webkit-text-stroke-color: $color-aqua;
+    padding-top: .8rem;
+    text-shadow: 0rem 0rem 1rem rgba($color-black, 1);
+    text-decoration: none;
+
+    // mixin example (not good. just a working example):
+
+    // @include custColor;
+
+
+    // animation using keyframes:
+
+    animation: toLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}

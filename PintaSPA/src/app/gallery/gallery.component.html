@@ -1,0 +1,9 @@
+<div class="page-container"></div>
+<h1 class="gallery-font">Experiences Gallery</h1>
+<div class="btn" (click)="getPlaces()">Show me the places!</div>
+
+<div class="placesList">
+    <div class="gallery-font" *ngFor="let place of places">
+        Go to {{ place.location }} to check out {{ place.name }}
+    </div>
+</div>

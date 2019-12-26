@@ -1,0 +1,50 @@
+  /* Button */
+  .button, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    color: $color-aqua;
+    // background-color: $color-light-purple;
+    background-color: $color-black;
+    border: none;
+    font-family: inherit;
+  }
+  
+  .button:hover, button:hover {
+    // opacity: 0.8;
+    font-weight: normal;
+  }
+  
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    color: $color-black;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid
+    #55c57a;
+    padding: 3px;
+    transition: all .2s;
+
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $color-turqu;
+        color: $color-aqua;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+    
+    &:active {
+        box-shadow: 0 1rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+  

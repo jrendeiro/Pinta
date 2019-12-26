@@ -1,0 +1,21 @@
+app-about {
+    margin: 2rem;
+    display: flex;
+    width: 100%;
+}
+
+.about {
+    font-size: $default-font-size;
+}
+
+.about-text {
+    padding-top: 1.5rem;
+    color: $color-red;
+    font-size: $font-size-large;
+    display: block;
+
+    
+    animation: toRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
