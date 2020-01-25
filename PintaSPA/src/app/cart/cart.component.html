@@ -1,6 +1,8 @@
-<h3>Cart</h3>
+<div class="page-container">
 
-<a routerLink="/shipping">Shipping Prices</a>
+<h3>Keep in touch!</h3>
+
+<!-- <a routerLink="/shipping">Keep in touch!</a> -->
 
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }} </span>
@@ -10,17 +12,17 @@
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
   <div>
-    <label for="name">
+    <!-- <label for="name">
       Name
-    </label>
-    <input id="name" type="text" formControlName="name">
+    </label> -->
+    <input id="name" type="text" formControlName="name" placeholder="Name">
   </div>
 
   <div>
-    <label for="address">
+    <!-- <label for="address">
       Address
-    </label>
-    <input id="address" type="text" formControlName="address">
+    </label> -->
+    <input id="email" type="text" formControlName="address" placeholder="email">
   </div>
 
   <button class="button" type="submit">
@@ -28,3 +30,5 @@
   </button>
   
 </form>
+
+</div>

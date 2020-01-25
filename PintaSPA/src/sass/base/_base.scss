@@ -12,13 +12,20 @@
   .page-container {
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
     padding: 5rem;
 
     & * {
+      // color: $color-aqua;
       color: $color-red;
     }
   }
+
+  // .page-font {
+  //   color: $color-red;
+  // }
 
   // router-outlet + *  {
   //   padding: 0 16px;

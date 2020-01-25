@@ -22,8 +22,8 @@ namespace PintaAPI.Controllers
         [HttpGet]
         public IActionResult GetPlaces()
         {
-            var places = _context.Places.ToList();
-            // var places = _context.Places;
+            // var places = _context.Places.ToList();
+            var places = _context.Places;
 
             return Ok(places);
         }
